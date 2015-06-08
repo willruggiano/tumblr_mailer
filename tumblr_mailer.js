@@ -2,17 +2,17 @@ var fs = require('fs');
 var ejs = require('ejs');
 
 var mandrill = require('mandrill-api/mandrill');
-var mandrill_client = new mandrill.Mandrill('mmEr-aGlpAq5p9PfFbmV3A');
+var mandrill_client = new mandrill.Mandrill('XXX');
 
 var csvFile = fs.readFileSync("friend_list.csv", "utf8");
 var email_template = fs.readFileSync("email_template.ejs", "utf8");
 
 var tumblr = require('tumblr.js');
 var client = tumblr.createClient({
-  consumer_key: 'f95dsQXWqJ4LDFHdufL0fp9vs9mDFkRXySRW1YhbUcdTOBUMl4',
-  consumer_secret: 'gvPP0rqCh7ttNWl71lanojjSXMpBqaW7xoPwjbyun3WmrsK4jE',
-  token: 'FR7Hx367y7oaQYI2qO3029tarL4XJlgqkWA47r57z2WWEJesJA',
-  token_secret: 'iHFX5qIBUE4o1QN9aXuKW6NS4fM1R9IE9YgLswHDIeZxwCTeML'
+  consumer_key: 'XXX',
+  consumer_secret: 'XXX',
+  token: 'XXX',
+  token_secret: 'XXX'
 });
 
 
